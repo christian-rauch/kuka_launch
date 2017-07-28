@@ -1,0 +1,11 @@
+<launch>
+  <!-- LWR driver -->
+  <node name="LWR_FRI" pkg="lwr_driver" type="lwr_driver" output="screen" >
+    <param name="port" value="49938"/>
+    <param name="host_hint" value="192.168.0.1"/>
+    <rosparam command="load" ns="" file="$(find lwr_driver)/config/joint_limits.yaml" />
+  </node>
+  
+  <!-- trajectory controller -->
+  <include file="$(find lwr_driver)/launch/trajectory_controller.launch" />
+</launch>
