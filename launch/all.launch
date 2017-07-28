@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find kuka_launch)/launch/kuka_lwr.launch" />
+  <include file="$(find schunk_sdh_launch)/launch/schunk_sdh.launch" />
+  <include file="$(find kuka_launch)/launch/openni2_apriltag.launch" />
+  <include file="$(find kuka_launch)/launch/moveit.launch" />
+</launch>
