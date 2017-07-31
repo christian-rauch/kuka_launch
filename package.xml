@@ -44,6 +44,7 @@
   <run_depend>kuka_lwr_sdh2_moveit</run_depend>
   <run_depend>lwr_driver</run_depend>
   <run_depend>openni2_launch</run_depend>
+  <run_depend>kinect2_bridge</run_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

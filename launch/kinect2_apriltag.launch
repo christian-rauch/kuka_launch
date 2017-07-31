@@ -1,0 +1,11 @@
+<launch>
+  <!-- launch kinect2 -->
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+  
+  <!-- remap kinect2 topics -->
+  <remap from="image_rect" to="kinect2/qhd/image_color_rect" />
+  <remap from="camera_info" to="kinect2/qhd/camera_info" />
+  
+  <!-- AprilTag detector -->
+  <include file="$(find kuka_launch)/launch/kuka_base_apriltag.launch" />
+</launch>
