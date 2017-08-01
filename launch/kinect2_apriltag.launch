@@ -1,6 +1,8 @@
 <launch>
   <!-- launch kinect2 -->
-  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <arg name="calib_path" value="$(find kuka_launch)/config/kinect2_calibration/" />
+  </include>
   
   <!-- remap kinect2 topics -->
   <remap from="image_rect" to="kinect2/qhd/image_color_rect" />
