@@ -8,4 +8,7 @@
   
   <!-- trajectory controller -->
   <include file="$(find lwr_driver)/launch/trajectory_controller.launch" />
+
+  <!-- moveit -->
+  <include file="$(find kuka_launch)/launch/moveit.launch" />
 </launch>
