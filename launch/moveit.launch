@@ -1,3 +1,4 @@
 <launch>
+  <param name="/move_group/arm/default_planner_config" type="str" value="LBKPIECEkConfigDefault" />
   <include file="$(find kuka_lwr_sdh2_moveit)/launch/move_group.launch" />
 </launch>
