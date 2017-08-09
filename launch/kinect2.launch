@@ -1,0 +1,6 @@
+<launch>
+  <!-- launch kinect2 -->
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <arg name="calib_path" value="$(find kuka_launch)/config/kinect2_calibration/" />
+  </include>
+</launch>
