@@ -19,6 +19,9 @@
     </rosparam>
   </node>
 
-  <!-- Transformation from tag t0 to robot base -->
-  <node pkg="tf" type="static_transform_publisher" name="t0_transform" args="-0.255 -0.255 0 0 0 0 1 t0  world_frame 100" />
+  <!-- Transformation from tags to robot base -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="t0_world" args="-0.252 -0.277 0 0 0 0 1 t0  world_frame 100" /> -->
+  <node pkg="tf" type="static_transform_publisher" name="t1_world" args="0.252 -0.277 0 0 0 0 1 t1  world_frame 100" />
+  <!-- <node pkg="tf" type="static_transform_publisher" name="t2_world" args="0.252 0.277 0 0 0 0 1 t2  world_frame 100" /> -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="t3_world" args="0.252 -0.277 0 0 0 0 1 t3  world_frame 100" /> -->
 </launch>
