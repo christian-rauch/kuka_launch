@@ -1,6 +1,6 @@
 <launch>
   <!-- Load the URDF/Xacro model of our robot -->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find robotiq_s_model_visualization)/cfg/s-model_articulated.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find robotiq_3f_gripper_visualization)/cfg/robotiq-3f-gripper_articulated.xacro'" />
 
   <!-- Provide simulated control of the robot joint angles -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
