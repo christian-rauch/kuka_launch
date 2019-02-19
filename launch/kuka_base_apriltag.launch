@@ -4,7 +4,7 @@
     <param name="image_transport" type="str" value="compressed" />
 
     <!-- Select the tag family: 16h5, 25h7, 25h9, 36h9, or 36h11(default) -->
-    <param name="tag_family" type="str" value="16h5" />
+    <param name="tag_family" type="str" value="36h11" />
 
     <!-- Enable projected optical measurements for more accurate tag transformations -->
     <!-- This exists for backwards compatability and should be left true for new setups -->
@@ -12,16 +12,10 @@
 
     <!-- Describe the tags -->
     <rosparam param="tag_descriptions">[
-      {id: 0, size: 0.147, frame_id: t0},
-      {id: 1, size: 0.147, frame_id: t1},
-      {id: 2, size: 0.147, frame_id: t2},
-      {id: 3, size: 0.147, frame_id: t3}]
+      {id: 0, size: 0.1513, frame_id: t0}]
     </rosparam>
   </node>
 
   <!-- Transformation from tags to robot base -->
-  <!-- <node pkg="tf" type="static_transform_publisher" name="t0_world" args="-0.252 -0.277 0 0 0 0 1 t0  world_frame 100" /> -->
-  <node pkg="tf" type="static_transform_publisher" name="t1_world" args="0.252 -0.277 0 0 0 0 1 t1  world_frame 100" />
-  <!-- <node pkg="tf" type="static_transform_publisher" name="t2_world" args="0.252 0.277 0 0 0 0 1 t2  world_frame 100" /> -->
-  <!-- <node pkg="tf" type="static_transform_publisher" name="t3_world" args="0.252 -0.277 0 0 0 0 1 t3  world_frame 100" /> -->
+  <node pkg="tf" type="static_transform_publisher" name="t0_world" args="-0.28035 -0.25535 0 0 0 0 1 t0 world_frame 100" />
 </launch>
