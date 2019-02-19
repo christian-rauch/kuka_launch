@@ -3,6 +3,6 @@
 		<param name="stream_mode" value="ClientPull" type="str" />
 		<!--param name="datastream_hostport" value="192.168.0.13:801" type="str" /-->
 		<param name="datastream_hostport" value="192.168.0.222:801" type="str" />
-		<param name="tf_ref_frame_id" value="/world" type="str" />
-		</node>
+		<param name="tf_ref_frame_id" value="world_frame" type="str" />
+	</node>
 </launch>
