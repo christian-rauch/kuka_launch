@@ -10,5 +10,5 @@
   <include file="$(find lwr_driver)/launch/trajectory_controller.launch" />
 
   <!-- moveit -->
-  <include file="$(find kuka_launch)/launch/moveit.launch" />
+  <include file="$(find kuka_launch)/launch/moveit_sdh2.launch" />
 </launch>
