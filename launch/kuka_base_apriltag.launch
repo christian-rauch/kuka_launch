@@ -17,5 +17,5 @@
   </node>
 
   <!-- Transformation from tags to robot base -->
-  <node pkg="tf" type="static_transform_publisher" name="t0_table" args="-0.28035 -0.25535 0 0 0 0 1 t0 table 100" />
+  <node pkg="tf" type="static_transform_publisher" name="t0_table" args="-0.25535 -0.28035 0 0 0 0 1 t0 table 100" />
 </launch>
