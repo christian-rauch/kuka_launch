@@ -9,7 +9,6 @@ project(kuka_launch)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   apriltags_ros
-  kuka_lwr_sdh2_moveit
   lwr_driver
   openni2_launch
 )

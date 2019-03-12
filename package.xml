@@ -41,7 +41,6 @@
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>apriltags_ros</run_depend>
-  <run_depend>kuka_lwr_sdh2_moveit</run_depend>
   <run_depend>lwr_driver</run_depend>
   <run_depend>openni2_launch</run_depend>
   <run_depend>kinect2_bridge</run_depend>
